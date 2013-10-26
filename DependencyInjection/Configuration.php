@@ -24,6 +24,22 @@ class Configuration implements ConfigurationInterface
         // configure your bundle. See the documentation linked above for
         // more information on that topic.
 
+        $rootNode
+            ->children()
+                ->arrayNode('client')
+                    ->prototype('array')
+                    ->children()
+                        ->scalarNode('class')
+                            ->defaultValue('Tumblr\API\Client')
+                        ->end()
+                        ->scalarNode('consumerKey')->end()
+                        ->scalarNode('consumerSecret')->end()
+                        ->scalarNode('token')->end()
+                        ->scalarNode('tokenSecret')->end()
+                    ->end()
+                ->end()
+            ->end();
+        
         return $treeBuilder;
     }
 }
