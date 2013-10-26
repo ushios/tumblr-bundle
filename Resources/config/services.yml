@@ -1,0 +1,7 @@
+parameters:
+#    ushios_tumblr.example.class: Ushios\Bundle\TumblrBundle\Example
+
+services:
+#    ushios_tumblr.example:
+#        class: %ushios_tumblr.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
