@@ -13,6 +13,7 @@
     ],
     "require": {
         "php": ">=5.3.2",
+        "symfony/symfony": "2.*",
         "tumblr/tumblr": "0.*"
     },
     "require-dev": {

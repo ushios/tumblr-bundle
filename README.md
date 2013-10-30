@@ -72,7 +72,7 @@ Using named settings.
 
 	public function fooAction()
     {
-        $aws = $this->container->get('ushios_tumblr_client.named');
+        $tumblr = $this->container->get('ushios_tumblr_client.named');
         get_class($aws); // Your\Tumblr\Client
     }
 
